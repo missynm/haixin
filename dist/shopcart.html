@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <!-- Powered by Terminus.io -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的购物车</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+     <link rel="stylesheet" href="css/a0.css">
+    <link rel="stylesheet" href="css/a1.css">
+    <link rel="stylesheet" href="css/a2.css">
+    <link rel="stylesheet" href="css/a3.css">
+    <link rel="stylesheet" href="css/a4.css">
+    <link rel="stylesheet" href="css/a5.css">
+   <link rel="stylesheet" href="css/b1.css">
+    <link rel="stylesheet" href="css/b2.css">
+    <link rel="stylesheet" href="css/b3.css">
+    <link rel="stylesheet" href="css/b4.css">
+    <link rel="stylesheet" href="css/b5.css">
+    <link rel="stylesheet" href="css/b6.css">
+     <link rel="stylesheet" href="css/b7.css">
+   <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+
+
+    </head>
+  <body data-base="" data-user-type="" class="" data-env="production">
+    
+ 
+    <div class='auth-container js-comp eve-component' data-comp-path='common/auth_container'>  <div id="auth-div" data-auth="null"></div>
+</div>
+   <div class='component-ceiling js-comp eve-component' data-comp-name='吊顶' data-comp-path='common/ceiling'><div class="navbar navbar-top js-navbar-top" data-shop="null" data-user="null">
+  <div class="navbar-collapse clearfix" style="width: 1200px;">
+    
+    <ul class="navbar-left-ul pull-left">
+      <li>
+          <span class="link-hisense-official"></span>
+      </li>
+    </ul>
+    
+    <ul class="navbar-right-ul">
+      
+        <li class="nav-item">
+          <a href="">
+            消息中心
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="">帮助中心</a>
+        </li>
+        <li class="nav-item">
+          <i class="iconfont icon-ic-cart"></i>
+          <a rel="nofollow" href="/buyer/cart" onclick=""> 购物车(<span id="js-cart-count">0</span>)</a>
+        </li>
+    </ul>
+
+  </div>
+</div>
+</div>
+   
+   <div class="main-container" style="margin-bottom: 20px;">
+      
+    <div class="cart-top-header-center" style="width: 1200px;height: 56px;margin:0 auto;">
+      <a href="/" target="_blank" style="display: block;float: left;">
+        <img class="logo" src="img/ed2889d6-3a2a-42c5-8a32-ab1d21cd00ce.png" style="width: 152px;height: 28px; margin-top: 8px;">
+      </a>
+      <h3 style="float: left; font-size: 16px;line-height: 16px;">&nbsp;&nbsp;&nbsp;我的购物车</h3>
+    </div>
+  </div>
+
+  <div class="fall-item-num">
+
+    <div class="fall-item-close"><i class="iconfont icon-ic-close"></i></div>
+  </div>
+  <div class="shopping-cart-address" style="width:1200px;height: 52px;margin:0 auto; ">
+    <span class="address-port">配送至</span>
+    <span class="address-body">
+      <div class='js-comp common-address-select-group-container eve-component' data-comp-path='common/hisense_address_group'>  <div class="common-address-group-text js-text" data-init="{&quot;province&quot;:370000,&quot;provinceName&quot;:&quot;山东&quot;,&quot;city&quot;:370200,&quot;cityName&quot;:&quot;青岛市&quot;,&quot;region&quot;:370203,&quot;regionName&quot;:&quot;市北区&quot;,&quot;street&quot;:370203008,&quot;streetName&quot;:&quot;延安路街道&quot;}">
+    <a class="content cutwords">
+        <span>山东</span><span>青岛市</span><span>市北区</span><span>延安路街道</span>
+    </a>
+    <i class="iconfont icon-ic-drop"></i>
+    <div class="attach hide js-attach"></div>
+  </div>
+  <div class="common-address-group-area js-area">
+    <ul class="common-address-tab clearfix js-tab">
+        <li data-level="1" data-id="370000"><a class="cutwords" href="javascript:;">山东</a><i class="iconfont icon-ic-drop"></i></li>
+        <li data-level="2" data-id="370200"><a class="cutwords" href="javascript:;">青岛市</a><i class="iconfont icon-ic-drop"></i></li>
+        <li class="active" data-level="3" data-id="370203"><a class="cutwords" href="javascript:;">市北区</a><i class="iconfont icon-ic-drop"></i></li>
+        <li data-level="4" data-id="延安路街道" ><a class="cutwords" href="javascript:;">延安路街道</a><i class="iconfont icon-ic-drop"></i></li>
+    </ul>
+    <ul class="common-address-content js-content" data-level="1" data-list=""></ul>
+    <ul class="common-address-content js-content" data-level="2" data-list=""></ul>
+    <ul class="common-address-content js-content" data-level="3" data-list=""></ul>
+    <ul class="common-address-content js-content" data-level="4" data-list=""></ul>
+  </div>
+</div>
+    </span>
+    <div class="address-get">
+        <span data-shop="1" data-index="0" class="show-coupon js-show-coupon hide" onclick="_smq.push(['custom', '下单流程', '1_购物车结算页', '领取优惠券']);">
+          <i class="iconfont icon-ic-coupon"></i>
+          领取优惠券
+          <i class="iconfont icon-ic-drop"></i>
+        </span>
+    </div>
+  </div>
+
+ <div class="container" style="border:1px solid black; width: 1200px;margin-left:200px;">
+            <h1>购物车</h1>
+            <h3><a href="listview.html">返回商品列表页面</a></h3>
+  <table>
+    <tr>
+        <th>商品</th>
+        <th>单价</th>
+        <th>颜色</th>
+        <th>库存</th>
+        <th>好评率</th>
+        <th>操作</th>
+    </tr>
+    <tr>
+        <td>【LED55EC720US】4K电视/16GB内存</td>
+        <td>4199</td>
+        <td>黑色</td>
+        <td>893</td>
+        <td>98%</td>
+        <td align="center"><input type="button" value="结算" onclick="addShopping(this)"/>
+        </td>
+    </tr>
+
+</table>
+
+
+
+    <!--         <table id="table" border="1" cellspacing="0" cellpadding="0" class="hide">
+                <thead>
+                    <tr>
+                        <th>
+                            <input type="checkbox" id="allCheck" class="ck" />全选
+                        </th>
+                        <th>
+                            图片
+                        </th>
+                        <th>
+                            描述
+                        </th>
+                        <th>
+                            数量
+                        </th>
+                        <th>
+                            单价
+                        </th>
+                        <th>
+                            小计
+                        </th>
+                        <th>
+                            操作
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                   
+                </tbody>
+            </table> -->
+            <!-- <div class="box" id="box">购物车里没有任何商品</div> -->
+            <h2 id="h2" class="" style="margin-left: 500px;">总价格：￥<span id="totalPrice">4199</span></h2>
+        </div>
+        <script src="js/server.js" type="text/javascript" charset="utf-8"></script>
+        <!--操作购物车页面的cart.js-->
+        <!-- <script src="js/cart.js"></script> -->
+
+
+ 
+
+
+
+
+
+
+
+<!-- 底部 -->
+
+
+
+
+
+
+  <div style="clear:both;"></div>
+  <div class="eve-page-part"><div><div class="eve-grid-auto eve-col-align-center" style="background-color:#ffffff;"><div class="eve-row"><div class="eve-col-cu eve-col-align-center" style="width:100%;height:410px;"><div class="eve-row"><div class="eve-col-cu" style="width:1188px;height:136px;"><div class="eve-row"><div class="eve-col-cu" style="width:297px;"><div class="eve-component"><div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'><div class="animated image-content element "
+  style="
+    overflow:hidden;
+    
+    
+    "
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  data-paramode=""
+  data-paraTop="">
+    <div class="image-container" style="  ">
+        <img  class="  "  alt="" title=""   style="width: 100%" 
+          data-original="//img.shop.hisense.com/2018/10/11/c1255578-1a73-4b38-b41b-1bef6fa1df7c.png">
+      </div>
+    
+</div>
+</div>
+</div>
+</div>
+<div class="eve-col-cu" style="width:297px;">
+<div class="eve-component">
+<div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
+<div class="animated image-content element "
+  style="
+    overflow:hidden;
+    
+    
+    "
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  data-paramode=""
+  data-paraTop="">
+    <div class="image-container" style="
+      
+      
+      ">
+        <img 
+          class="
+          
+          
+          
+          "
+          alt="" title=""
+          style="width: 100%" 
+          data-original="//img.shop.hisense.com/2018/10/11/7bcba950-e0e2-49ee-b406-d3c0b6c66e97.png">
+      </div>
+    
+</div>
+</div></div></div><div class="eve-col-cu" style="width:297px;"><div class="eve-component"><div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'><div class="animated image-content element "
+  style="
+    overflow:hidden;
+    
+    
+    "
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  data-paramode=""
+  data-paraTop="">
+    <div class="image-container" style="
+      
+      
+      ">
+        <img 
+          class="
+          
+          
+          
+          "
+          alt="" title=""
+          style="width: 100%" 
+          data-original="//img.shop.hisense.com/2018/10/11/40a88f67-96c3-4325-ac40-961b5fe48eaa.png">
+      </div>
+    
+</div>
+</div></div></div><div class="eve-col-cu" style="width:297px;"><div class="eve-component"><div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'><div class="animated image-content element "
+  style="
+    overflow:hidden;
+    
+    
+    "
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  data-paramode=""
+  data-paraTop="">
+    <div class="image-container" style="
+      
+      
+      ">
+        <img 
+          class="
+          
+          
+          
+          "
+          alt="" title=""
+          style="width: 100%" 
+          data-original="//img.shop.hisense.com/2018/10/11/48cb09f4-d236-4407-aff4-0ff5b4517702.png">
+      </div>
+    
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="eve-row">
+<div class="eve-col-cu" style="width:1188px;height:254px;">
+<div class="eve-row">
+<div class="eve-col-cu" style="width:160px;height:127px;margin-top:5px;">
+<div class="eve-component">
+<div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
+<div class="animated text-content element"  data-animate=""  data-aniDuration=""
+  data-aniDelay=""  style=" line-height:22px;  color:#262626;  font-size:16px; ">
+  
+    <p style=" " class=" edit-text-content">
+       企业简介 
+    </p>
+  
+</div>
+</div></div><div class="eve-component" style="margin-top:20px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="http://www.hisense.cn/gyhx/index.aspx?nodeid&#x3D;138" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       企业简介 
+     
+    </p>
+   </a> 
+</div>
+</div></div><div class="eve-component" style="margin-top:8px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="http://www.hisense.cn/hxls/index.aspx?nodeid&#x3D;139" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       企业历史 
+     
+    </p>
+   </a> 
+</div>
+</div></div><div class="eve-component" style="margin-top:8px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="http://www.hisense.cn/hxry/index.aspx?nodeid&#x3D;140" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       企业荣誉 
+     
+    </p>
+   </a> 
+</div>
+</div></div><div class="eve-component" style="margin-top:8px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="http://www.hisense.cn/qqbj/index.aspx?nodeid&#x3D;142" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       全球布局 
+     
+    </p>
+   </a> 
+</div>
+</div></div></div><div class="eve-col-cu" style="width:160px;height:128px;margin-top:5px;"><div class="eve-component"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:22px;
+  color:#262626;
+  font-size:16px;
+  
+  
+  
+  
+  ">
+  
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       人才招聘 
+     
+    </p>
+  
+</div>
+</div></div><div class="eve-component" style="margin-top:20px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="http://hisense.zhiye.com/sjobs?k&#x3D;&amp;c&#x3D;&amp;p&#x3D;3^-1,1^-1&amp;PageIndex&#x3D;1" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       社会招聘 
+     
+    </p>
+   </a> 
+</div>
+</div></div><div class="eve-component" style="margin-top:8px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="http://hisense.zhiye.com/campusnotice" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       校园招聘 
+     
+    </p>
+   </a> 
+</div>
+</div></div><div class="eve-component" style="margin-top:8px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="http://hisense.zhiye.com/pxfz" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       培训发展 
+     
+    </p>
+   </a> 
+</div>
+</div></div><div class="eve-component" style="margin-top:8px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="http://hisense.zhiye.com/klgz" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       快乐工作 
+     
+    </p>
+   </a> 
+</div>
+</div></div></div><div class="eve-col-cu" style="width:160px;height:110px;margin-top:5px;"><div class="eve-component"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:22px;
+  color:#262626;
+  font-size:16px;
+  
+  
+  
+  
+  ">
+  
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       商城服务 
+     
+    </p>
+  
+</div>
+</div></div><div class="eve-component" style="margin-top:20px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="https://www.hisense.com/pub/articles/list?menuId&#x3D;12" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       售后政策 
+     
+    </p>
+   </a> 
+</div>
+</div></div><div class="eve-component" style="margin-top:8px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="https://www.hisense.com/pub/articles/detail?id&#x3D;195&amp;menuId&#x3D;13" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       价格保护 
+     
+    </p>
+   </a> 
+</div>
+</div></div><div class="eve-component" style="margin-top:8px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="https://www.hisense.com/pub/articles/list?menuId&#x3D;23" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       退款说明 
+     
+    </p>
+   </a> 
+</div>
+</div></div><div class="eve-component" style="margin-top:8px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="https://www.hisense.com/pub/articles/detail?id&#x3D;166&amp;menuId&#x3D;13" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       退换货说明 
+     
+    </p>
+   </a> 
+</div>
+</div></div></div><div class="eve-col-cu" style="width:160px;height:128px;margin-top:5px;"><div class="eve-component"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:22px;
+  color:#262626;
+  font-size:16px;
+  
+  
+  
+  
+  ">
+  
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       购物指南 
+    </p>
+  
+</div>
+</div></div><div class="eve-component" style="margin-top:20px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="https://www.hisense.com/pub/articles/list?menuId&#x3D;19" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       
+       
+       购物流程 
+    </p>
+   </a> 
+</div>
+</div></div><div class="eve-component" style="margin-top:8px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="https://www.hisense.com/pub/articles/list?menuId&#x3D;19" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       常见问题 
+     
+    </p>
+   </a> 
+</div>
+</div></div><div class="eve-component" style="margin-top:8px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="https://www.hisense.com/pub/articles/detail?id&#x3D;14&amp;menuId&#x3D;20" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       在线支付 
+     
+    </p>
+   </a> 
+</div>
+</div></div><div class="eve-component" style="margin-top:8px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="https://www.hisense.com/pub/articles/detail?id&#x3D;13&amp;menuId&#x3D;20" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       找人代付 
+     
+    </p>
+   </a> 
+</div>
+</div></div></div><div class="eve-col-cu" style="width:160px;height:110px;margin-top:5px;"><div class="eve-component"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:22px;
+  color:#262626;
+  font-size:16px;
+  
+  
+  
+  
+  ">
+  
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       物流配送 
+     
+    </p>
+  
+</div>
+</div></div><div class="eve-component" style="margin-top:20px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="https://www.hisense.com/pub/articles/detail?id&#x3D;42&amp;menuId&#x3D;21" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       送货范围 
+     
+    </p>
+   </a> 
+</div>
+</div></div><div class="eve-component" style="margin-top:8px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="https://www.hisense.com/pub/articles/detail?id&#x3D;196&amp;menuId&#x3D;21" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       
+       送装一体 
+    </p>
+   </a> 
+</div>
+</div></div></div><div class="eve-col-cu" style="width:160px;margin-top:5px;"><div class="eve-component"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:22px;
+  color:#262626;
+  font-size:16px;
+  
+  
+  
+  
+  ">
+  
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       友情链接 
+     
+    </p>
+  
+</div>
+</div></div><div class="eve-component" style="margin-top:20px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="http://tv.qq.com" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       腾讯视频 
+    </p>
+   </a> 
+</div>
+</div></div><div class="eve-component" style="margin-top:8px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  line-height:18px;
+  color:#777777;
+  
+  
+  
+  
+  
+  ">
+   <a data-href="http://tv.qq.com" data-blank="" data-is-login-modal="">
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       
+       TV官网 
+     
+     
+     
+    </p>
+   </a> 
+</div>
+</div>
+</div>
+</div>
+<div class="eve-col-cu eve-col-align-center" style="width:228px;">
+<div class="eve-component">
+<div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
+<div class="animated text-content element"  data-animate=""  data-aniDuration=""  data-aniDelay="" style="text-align:center;  line-height:32px;  color:#00aaa6;font-size:24px;  ">
+  
+    <p style="   "  class=" edit-text-content">
+    
+       4006-111-111 
+     
+    </p>
+  
+</div>
+</div>
+</div>
+<div class="eve-component" style="margin-top:4px;">
+<div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
+<div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="text-align:center;  color:#777777;  ">
+  
+    <p style=" "  class=" edit-text-content">
+      
+       周一至周日 24小时 
+     
+    </p>
+  
+</div>
+</div>
+</div>
+<div class="eve-row">
+<div class="eve-col-cu" style="width:100px;height:100px;margin-top:16px;">
+<div class="eve-component">
+<div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
+<div class="animated image-content element "
+  style=" overflow:hidden; " 
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  data-paramode=""
+  data-paraTop="">
+    <div class="image-container" style="">
+        <img class=""
+          alt="" title=""
+          style="width: 100%" 
+         src="img/3f7c4bd9-2fe0-4a36-a12a-f22555e341c4.jpg" >
+      </div>
+    
+</div>
+</div>
+</div>
+</div>
+</div>
+  <div class="eve-component" style="margin-top:8px;">
+    <div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
+      <div class="animated text-content element"
+        data-animate=""
+        data-aniDuration=""
+        data-aniDelay=""
+        style="text-align:center;  color:#777777;  ">
+        
+          <p style="  "      class=" edit-text-content">
+             
+             扫描关注海信服务 
+           
+          </p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="eve-row">
+<div class="eve-col-cu eve-col-align-center" style="width:100%;background-color:#3F3F3F;height:60px;margin-top:20px;">
+<div class="eve-row">
+<div class="eve-col-cu" style="width:1188px;height:60px;">
+<div class="eve-row">
+<div class="eve-col-cu" style="width:229px;margin-top:22px;">
+<div class="eve-row">
+<div class="eve-col-cu" style="width:56px;">
+<div class="eve-component">
+<div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
+<div class="animated image-content element "
+  style="
+    overflow:hidden;
+    
+    
+    "
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  data-paramode=""
+  data-paraTop="">
+    <div class="image-container" style="">
+        <img  class=""
+          alt="" title=""
+          style="width: 100%" 
+          data-original="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png">
+      </div>
+    
+</div>
+</div>
+</div>
+</div>
+<div class="eve-col-cu" style="width:56px;margin-left:2px;">
+<div class="eve-component">
+<div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
+<div class="animated image-content element "
+  style="
+    overflow:hidden;
+    
+    
+    "
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  data-paramode=""
+  data-paraTop="">
+    <div class="image-container" style="
+      
+      
+      ">
+        <img 
+          class="
+          
+          
+          
+          "
+          alt="" title=""
+          style="width: 100%" 
+          data-original="//img.shop.hisense.com/2018/10/11/b03da87b-c3e6-4bd4-8e15-995cd5e93731.png">
+      </div>
+    
+</div>
+</div>
+</div>
+</div>
+<div class="eve-col-cu" style="width:56px;margin-left:2px;">
+<div class="eve-component"><div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
+<div class="animated image-content element "
+  style="
+    overflow:hidden;
+    
+    
+    "
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  data-paramode=""
+  data-paraTop="">
+    <div class="image-container" style="   ">
+        <img  
+           class="     "
+          alt="" title=""
+          style="width: 100%" 
+          data-original="//img.shop.hisense.com/2018/10/11/886097e6-0582-4e12-a299-42886bf45f9b.png">
+      </div>
+    
+</div>
+</div></div></div><div class="eve-col-cu" style="width:56px;margin-left:2px;"><div class="eve-component"><div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'><div class="animated image-content element "
+  style="
+    overflow:hidden;
+    
+    
+    "
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  data-paramode=""
+  data-paraTop="">
+    <div class="image-container" style="
+      
+      
+      ">
+        <img 
+          class="
+          
+          
+          
+          "
+          alt="" title=""
+          style="width: 100%" 
+          data-original="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png">
+      </div>
+    
+</div>
+</div></div></div></div></div><div class="eve-col-cu" style="width:80px;margin-left:16px;margin-top:22px;"><div class="eve-component"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="
+  
+  color:#aaaaaa;
+  
+  
+  
+  
+  
+  ">
+  
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       隐私政策 
+    </p>
+  
+</div>
+</div></div></div><div class="eve-col-cu" style="width:863px;"><div class="eve-component" style="margin-top:22px;"><div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'><div class="animated text-content element"
+  data-animate=""
+  data-aniDuration=""
+  data-aniDelay=""
+  style="text-align:right;
+  
+  color:#aaaaaa;
+  
+  
+  
+  
+  
+  ">
+  
+    <p style="
+      
+      
+      
+      "
+      class=" edit-text-content">
+       
+       
+       Copyright 2015 Hisense Group All Rights Reserved. 海信集团有限公司版权所有 鲁ICP备05027830 
+     
+     
+    </p>
+  
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div>    <div class='js-comp component-right-bottom-nav eve-component' data-comp-path='common/right_bottom_nav'><ul class="crbm-ul" data-user="null"
+    class="">
+  <li title="购物车">
+    <a href="/buyer/cart" onclick="_smq.push(['custom', '全站', '右侧悬浮栏', '购物车']);">
+      <i class="iconfont icon-ic-cart"></i>
+      <div class="bottom-tip">购物车</div>
+    </a>
+  </li>
+  <li class="js-open-kefu" title="客服">
+    <a href="javascript:;" onclick="_smq.push(['custom', '全站', '右侧悬浮栏', '在线客服']);">
+      <i class="iconfont icon-GroupCopyx-"></i>
+      <div class="bottom-tip">在线客服</div>
+    </a>
+  </li>
+    <li class="js-qrcode-li" title="二维码">
+      <a href="javascript:;">
+        <i class="iconfont icon-ic-logo-mobile"></i>
+        <div class="bottom-tip">手机app</div>
+      </a>
+    </li>
+  <li class="js-jump-footprint" title="足迹">
+    <a href="javascript:;" onclick="_smq.push(['custom', '全站', '右侧悬浮栏', '浏览记录']);">
+      <i class="iconfont icon-ic-footprint"></i>
+      <div class="bottom-tip">足迹</div>
+    </a>
+  </li>
+  <li class="js-return-top return-top" title="返回顶部">
+    <a href="javascript:;">
+      <i class="iconfont icon-huidaodingbujiantou"></i>
+      <div class="bottom-tip">返回顶部</div>
+    </a>
+  </li>
+</ul>
+<div class="item-qrcode-container js-item-qrcode-container hide">
+  <div class="item-qrcode-title">
+    <div>扫一扫</div>
+    <div>使用手机购买</div>
+  </div>
+  <div class="item-qrcode-wrapper">
+    <div class="js-qrcode-content">
+    </div>
+  </div>
+</div>
+</div>   
+<!-- 
+<script src="//assets.shop.hisense.com/assets/scripts/bluebird-5f381f.js"></script>
+    <script src="//assets.shop.hisense.com/assets/scripts/vendor-ec5606.js"></script>
+  
+      <script src="http://cdn.staticfile.org/jquery-placeholder/2.0.8/jquery.placeholder.js"></script>
+    <![endif]
+    <script src="//assets.shop.hisense.com/assets/scripts/templates-back-85bbd3.js"></script>
+    <script src="//assets.shop.hisense.com/assets/scripts/app-back-3f6a82.js"></script>
+    <script language="javascript" type="text/javascript">
+      var NTKF_PARAM = {
+        siteid: "kf_9694",		             //企业ID，为固定值，必填
+        settingid: "kf_9694_1448276429098",	 //接待组ID，为固定值，必填
+        uid: "",		                 //用户ID，未登录可以为空，但不能给null，uid赋予的值在显示到小能客户端上
+        uname: "",		     //用户名，未登录可以为空，但不能给null，uname赋予的值显示到小能客户端上
+        isvip: "",                           //是否为vip用户，0代表非会员，1代表会员，取值显示到小能客户端上
+        userlevel: "",		                 //网站自定义会员级别，0-N，可根据选择判断，取值显示到小能客户端上
+        erpparam: ""                       //erpparam为erp功能的扩展字段，可选，购买erp功能后用于erp功能集成
+      }
+    </script>
+    <script src="//dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9694" charset="utf-8" defer async></script>
+    <script>
+      window.i18nEnv = {"lng":"zh-CN","ns":["all_mix"],"defaultNS":"all_mix"};
+      i18nIniter({
+        cache: { enable: false },
+        resourceFormat: 'json',
+        callback: function () {
+          require("app")();
+        }
+      });
+    </script>
+    
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c92ff3a47b1855874d71f3beb5345364";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>  -->
+  </body>
+  <!-- Powered by Terminus.io -->
+</html>

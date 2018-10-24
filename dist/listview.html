@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <!-- Powered by Terminus.io -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>海信商城-商品搜索</title>
+    <!-- <meta name="description" content="输入产品名，搜索查询海信相关产品以及活动产品">
+    <meta name="keywords" content="海信商城搜索,海信搜索,海信商城产品搜索,海信产品搜索,海信商城查找,海信产品查找" />
+    <meta name="360-site-verification" content="8394049c1fd212bdb3dcd85d05f25338" />
+    <meta name="sogou_site_verification" content="ipw5BodbR5"/>
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//assets.shop.hisense.com/assets/images/other-images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" href="//assets.shop.hisense.com/assets/styles/vendor-456b0d.css">
+    <link rel="stylesheet" href="//assets.shop.hisense.com/assets/styles/eevee-layout-677c65.css">-->
+     <link rel="stylesheet" href="css/haixin.css">
+  <link rel="stylesheet" href="css/a0.css">
+    <link rel="stylesheet" href="css/a1.css">
+    <link rel="stylesheet" href="css/a2.css">
+    <link rel="stylesheet" href="css/a3.css">
+    <link rel="stylesheet" href="css/a4.css">
+    <link rel="stylesheet" href="css/a5.css">
+    <link rel="stylesheet" href="css/b1.css">
+    <link rel="stylesheet" href="css/b2.css">
+    <link rel="stylesheet" href="css/b3.css">
+    <link rel="stylesheet" href="css/b4.css">
+    <link rel="stylesheet" href="css/b5.css">
+    <link rel="stylesheet" href="css/b6.css">
+    <link rel="stylesheet" href="css/b7.css">
+    <link rel="stylesheet" href="css/listview.css">
+    <!-- <script>
+      !function(e,t,n,s,a,c,i){e[a]=e[a]||function(){(e[a].q=e[a].q||[]).push(arguments)},c=t.createElement(n),i=t.getElementsByTagName(n)[0],c.async=1,c.src=s,i.parentNode.insertBefore(c,i)}(window,document,"script","//assets.shop.hisense.com/ta.js","$ta");
+      $ta('start',{ udata: { uid: 0 }, ak: '0585a09fd5c5443abb17f5b7c5b46a2e' , url: '//analytics.shop.hisense.com/collect' })
+    </script>
+    <script>!(function(a,b,c,d,e,f){var g="",h=a.sessionStorage,i="__admaster_ta_param__",j="tmDataLayer"!==d?"&dl="+d:"";
+    if(a[f]={},a[d]=a[d]||[],a[d].push({startTime:+new Date,event:"tm.js"}),h){var k=a.location.search,
+    l=new RegExp("[?&]"+i+"=(.*?)(&|#|$)").exec(k)||[];l[1]&&h.setItem(i,l[1]),l=h.getItem(i),
+    l&&(g="&p="+l+"&t="+ +new Date)}var m=b.createElement(c),n=b.getElementsByTagName(c)[0];m.src="//tag.cdnmaster.cn/tmjs/tm.js?id="+e+j+g,
+    m.async=!0,n.parentNode.insertBefore(m,n)})(window,document,"script","tmDataLayer","TM-776674","admaster_tm");</script>  -->
+     </head>
+
+  <body data-design=""  data-env="production" style="background-color: #ffffff;">
+            <div class='js-comp component-right-bottom-nav eve-component' data-comp-path='common/right_bottom_nav'>
+            <ul data-user="null" class="">
+          <li title="购物车">
+            <a href="/buyer/cart" onclick="_smq.push(['custom', '全站', '右侧悬浮栏', '购物车']);">
+              <i class="iconfont icon-cart"></i>
+                <div class="bottom-tip">购物车</div>
+              </a>
+            </li>
+            <li class="js-open-kefu" title="客服">
+              <a href="javascript:;" onclick="_smq.push(['custom', '全站', '右侧悬浮栏', '在线客服']);">
+                <i class="iconfont icon-service"></i>
+                <div class="bottom-tip">客服</div>
+              </a>
+            </li>
+            <li title="足迹">
+              <a href="#" onclick="_smq.push(['custom', '全站', '右侧悬浮栏', '浏览记录']);">
+                <i class="iconfont icon-shijian"></i>
+                <div class="bottom-tip">足迹</div>
+              </a>
+            </li>
+            <li class="js-return-top return-top" style="visibility:hidden;" title="回到顶部">
+              <a href="javascript:;">
+                <i class="iconfont icon-top"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="item-qrcode-container js-item-qrcode-container hide">
+            <div class="item-qrcode-title">
+              <div>扫一扫</div>
+              <div>使用手机购买</div>
+              <div class="item-qrcode-close-icon-container">
+                <i class="iconfont icon-guanbi js-close-item-qrcode-container"></i>
+              </div>
+            </div>
+            <div class="item-qrcode-wrapper">
+              <div class="js-qrcode-content">
+              </div>
+            </div>
+          </div>
+        </div>    
+
+
+
+
+
+<div class="top36" style="width:100%;height: 36px;">
+  <div class="center" style="width: 1200px;height: 36px;">
+     <ul class="navleft">
+      <li>
+          <a href="http://www.hisense.cn">海信集团官网</a>
+      </li>
+    </ul>
+    
+    <ul class="navright-ul">
+        <li class="login">
+          <a href="login.html">登录</a>
+        </li>
+        <li class="register">
+          <a href="register.html">注册</a>
+        </li>
+        <li class="news">
+          <a href="">消息中心</a>
+        </li>
+        <li class="login">
+          <a href="">帮助中心</a>
+        </li>
+        <li class="login">
+          <a href="">网站导航</a>
+        </li>
+        <li class="login">
+          <a href="">购物车</a>
+        </li>
+    </ul>
+
+ 
+  </div>
+</div>
+<div class="top64">
+  <div class="top123">
+    <div class="left">
+    <a href=""><img src="img/ed2889d6-3a2a-42c5-8a32-ab1d21cd00ce.png" alt=""></a>
+    </div>
+    <div class="center">
+      <ul>
+        <li class="aaa">
+          <a href="">激光</a>
+        </li>
+        <li class="aaa">
+          <a href="">电视</a>
+        </li>
+        <li class="aaa">
+          <a href="">冰箱</a>
+        </li>
+        <li class="aaa">
+          <a href="">冷柜</a>
+        </li>
+        <li class="aaa">
+          <a href="">手机</a>
+        </li>
+        <li class="aaa">
+          <a href="">空净</a>
+        </li>
+        <li class="aaa">
+          <a href="">洗衣机</a>
+        </li>
+
+     </ul>
+    </div>
+    <div class="right"></div>
+  </div>
+    <!-- <div class="item"></div> -->
+</div>
+
+
+
+
+
+
+
+
+        
+<!--       
+  <div class="eve-page-part"><div>
+
+  <div class="eve-grid-auto eve-col-align-center">
+
+
+
+
+
+
+
+
+
+
+
+
+ -->
+  
+  <div class="eve-page-part">
+  <div>
+  <div class="eve-grid-auto eve-col-align-center" style="background-color:#F7F7F7;">
+  <div class="eve-row">
+  <div class="eve-col-cu" style="width:1200px;margin-top:24px;margin-bottom:60px;"><div class="eve-component">
+
+
+  <div class='component-item-search js-comp clearfix eve-component' data-comp-name='商品主搜' data-comp-path='design/items_search'>  
+
+
+<!-- left 开始 -->
+  <div class="left js-left can-fixed " style="width:228px;">
+    <div class="search-attrs js-search-attrs">
+      <div class="search-side">
+          <dl class="filter-cat-section" data-key="bids">
+            <dt class="filter-cat-title">品牌</dt>
+            <dd class="filter-brand" data-length="1">
+              <ul class="filter-brand-list clearfix">
+                  <li class="brand-item search-side-item "
+                    data-name="海信"
+                    data-value="1" title="海信"
+                    onclick="_smq.push(['custom', '列表页', '品牌选择', '海信']);">
+                    海信
+                  </li>
+              </ul>
+            </dd>
+          </dl>
+        <dl class="filter-cat-section">
+
+          <dt class="filter-cat-title"> <br>价格区间(¥)</dt>
+          <dd>
+            <form class="form filter-form js-filter-form">
+              <fieldset>
+                <div class="input-group input-group-prepend">
+                  <input class="input-small" type="number" name="p_f" data-value="" value="" placeholder="0.00" style="width: 53px;height: 12px;padding:8px 12px;">
+                </div>
+                <span class="line">-</span>
+                <div class="input-group input-group-prepend">
+                  <input class="input-small" type="number" name="p_t" data-value="" value="" placeholder="最高价" style="width: 53px;height: 12px; padding:8px 12px;" >
+                </div>
+                <span class="operations">
+                  <button type="submit" class="btn btn-primary price-range-submit" id="js-price-range">确定</button>
+                  <button class="btn price-range-cancel" id="js-cancel-price-filter">取消</button>
+                </span>
+              </fieldset>
+            </form>
+          </dd>
+        </dl>
+        <dl class="filter-cat-section" data-key="bcids">
+          <dt class="filter-cat-title">分类</dt>
+          <dd class="">
+            <ul class="attr-list clearfix">
+              <li class="search-side-item "
+                title="55英寸"
+                data-value="17"
+                data-attr="55英寸"
+                onclick="_smq.push(['custom', '列表页', '分类', '55英寸']);">
+              55英寸
+              </li>
+              <li class="search-side-item "
+                title="65英寸及以上"
+                data-value="15"
+                data-attr="65英寸及以上"
+                onclick="_smq.push(['custom', '列表页', '分类', '65英寸及以上']);">
+              65英寸及以上
+              </li>
+              <li class="search-side-item "
+                title="65英寸及以上"
+                data-value="25"
+                data-attr="65英寸及以上"
+                onclick="_smq.push(['custom', '列表页', '分类', '65英寸及以上']);">
+              65英寸及以上
+              </li>
+              <li class="search-side-item "
+                title="58-60英寸"
+                data-value="16"
+                data-attr="58-60英寸"
+                onclick="_smq.push(['custom', '列表页', '分类', '58-60英寸']);">
+              58-60英寸
+              </li>
+              <li class="search-side-item "
+                title="49-50英寸"
+                data-value="18"
+                data-attr="49-50英寸"
+                onclick="_smq.push(['custom', '列表页', '分类', '49-50英寸']);">
+              49-50英寸
+              </li>
+              <li class="search-side-item "
+                title="65英寸及以上"
+                data-value="20"
+                data-attr="65英寸及以上"
+                onclick="_smq.push(['custom', '列表页', '分类', '65英寸及以上']);">
+              65英寸及以上
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="filter-cat-section filter-cat-attr" data-key="attrs">
+          <!-- <dt class="filter-cat-title"> 分辨率</dt> -->
+          <dd class="" data-length="1">
+            <ul class="attr-list clearfix">
+              <li class="search-side-item " data-value="4"  title="3840×2160" data-name="3840×2160" >  3840×2160 </li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="filter-cat-section filter-cat-attr" data-key="attrs">
+          <!-- <dt class="filter-cat-title">存储（ROM)</dt> -->
+          <dd class="" data-length="3">
+            <ul class="attr-list clearfix">
+              <li class="search-side-item "
+                data-value="4"
+                title="16GB"
+                data-name="16GB"
+              >
+                16GB
+              </li>
+              <li class="search-side-item "
+                data-value="3"
+                title="32GB"
+                data-name="32GB"
+              >
+                32GB
+              </li>
+              <li class="search-side-item "
+                data-value="2"
+                title="8GB"
+                data-name="8GB"
+              >
+                8GB
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="filter-cat-section filter-cat-attr" data-key="attrs">
+          <!-- <dt class="filter-cat-title">尺寸</dt> -->
+          <dd class="" data-length="4">
+            <ul class="attr-list clearfix">
+              <li class="search-side-item "
+                data-value="2"
+                title="55英寸"
+                data-name="55英寸"
+              >
+                55英寸
+              </li>
+              <li class="search-side-item "
+                data-value="2"
+                title="65英寸"
+                data-name="65英寸"
+              >
+                65英寸
+              </li>
+              <li class="search-side-item "
+                data-value="2"
+                title="75英寸"
+                data-name="75英寸"
+              >
+                75英寸
+              </li>
+              <li class="search-side-item "
+                data-value="1"
+                title="50英寸"
+                data-name="50英寸"
+              >
+                50英寸
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="filter-cat-section filter-cat-attr" data-key="attrs">
+          <!-- <dt class="filter-cat-title">  内存（RAM)</dt> -->
+          <dd class="" data-length="2">
+            <ul class="attr-list clearfix">
+              <li class="search-side-item "
+                data-value="1"
+                title="2GB"
+                data-name="2GB"
+              >
+                2GB
+              </li>
+              <li class="search-side-item "
+                data-value="1"
+                title="3GB"
+                data-name="3GB"
+              >
+                3GB
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <!-- left  结束 -->
+
+<!-- right 开始 -->
+  <div class="right can-fixed " style="float: right; width: 948px;" >
+    <span class="items-total" data-total="52"></span>
+
+
+    <div class="filter shop-search-filter">
+      <div class="displayChange">
+        <span class="list-display js-list-display active" data-value="0"><i class="iconfont icon-ic-arrange-h"></i></span>
+        <span class="list-display js-list-display " data-value="1"><i class="iconfont icon-ic-arrange-v"></i></span>
+      </div>
+      <div class="filter-banner">
+        <span class="item-sort js-item-sort" data-index="4">评价数 <i class="iconfont icon-xiala"></i></span>
+        <!-- js-item-sort的index 需要从0开始 -->
+        <span class="item-sort js-item-sort" data-index="2">销量 <i class="iconfont icon-xiala"></i></span>
+        <span class="item-sort js-item-sort" data-index="0">价格 <i class="iconfont icon-xiala"></i></span>
+      </div>
+    </div>
+
+
+
+    <div class="filter hisense-filter">
+      <div class="delivery-area">
+        <label>配送至</label>
+        <div class='js-comp common-address-select-group-container eve-component' data-comp-path='common/hisense_address_group'>  <div class="common-address-group-text js-text" data-init="{&quot;province&quot;:370000,&quot;provinceName&quot;:&quot;山东&quot;,&quot;city&quot;:370200,&quot;cityName&quot;:&quot;青岛市&quot;,&quot;region&quot;:370203,&quot;regionName&quot;:&quot;市北区&quot;,&quot;street&quot;:370203027,&quot;streetName&quot;:&quot;海伦路街道&quot;}">
+    <a class="content cutwords">
+        <span>山东</span><span>青岛市</span><span>市北区</span><span>海伦路街道</span>
+    </a>
+    <i class="iconfont icon-ic-drop"></i>
+    <div class="attach hide js-attach"></div>
+  </div>
+  <div class="common-address-group-area js-area">
+    <ul class="common-address-tab clearfix js-tab">
+        <li data-level="1" data-id="370000"><a class="cutwords" href="javascript:;">山东</a><i class="iconfont icon-ic-drop"></i></li>
+        <li data-level="2" data-id="370200"><a class="cutwords" href="javascript:;">青岛市</a><i class="iconfont icon-ic-drop"></i></li>
+        <li class="active" data-level="3" data-id="370203"><a class="cutwords" href="javascript:;">市北区</a><i class="iconfont icon-ic-drop"></i></li>
+        <li data-level="4" data-id="海伦路街道" ><a class="cutwords" href="javascript:;">海伦路街道</a><i class="iconfont icon-ic-drop"></i></li>
+    </ul>
+    <ul class="common-address-content js-content" data-level="1" data-list=""></ul>
+    <ul class="common-address-content js-content" data-level="2" data-list=""></ul>
+    <ul class="common-address-content js-content" data-level="3" data-list=""></ul>
+    <ul class="common-address-content js-content" data-level="4" data-list=""></ul>
+  </div>
+      </div>
+      </div>
+      <div class="checkbox-container">
+        <label for="stock"><input class="input-checkbox js-stock-filter" id="stock" type="checkbox" >有货</label>
+      </div>
+    </div>
+    
+
+
+    <!-- 商品列表 -->
+    <div class="list list-squared list-condensed clearfix">
+          <ul class="shop-search-items-img-type  card">
+            <li class="product clearfix " style="float: left;">
+                  <div class="small-banner process">活动预热中</div>
+              <div class="product-image">
+                <a href="detail.html" target="_blank">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【LED55EC750US】55英寸/4K电视/金属超薄/人工智能/32GB内存 ">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/1" target="_blank">55英寸/4K电视/金属超薄/人工智能/32GB内存</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">3799.00</span></span>
+                  <span class="saleQuantity">已售5690台</span>
+                </p>
+    
+                <div class="promotion clearfix" >
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">3799.00</span></span>
+                  <span class="saleQuantity">已售5690台</span>
+                </p>
+              </div>
+            </li>
+            <li class="product clearfix " style="float: left;">
+              <div class="product-image">
+                <a href="detail.html" target="_blank">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【LED55EC720US】55英寸/4K电视/金属超薄/HDR/16GB内存">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/14" target="_blank">55英寸/4K电视/金属超薄/HDR/16GB内存</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">3199.00</span></span>
+                  <span class="saleQuantity">已售5911台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">3199.00</span></span>
+                  <span class="saleQuantity">已售5911台</span>
+                </p>
+              </div>
+            </li>
+            <li class="product clearfix " style="float: left;">
+              <div class="product-image">
+                <a href="detail.html" target="_blank">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【LED55E5U】55英寸/4K电视/VIDDA智能/8GB内存">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/43" target="_blank">55英寸/4K电视/VIDDA智能/8GB内存</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">2399.00</span></span>
+                  <span class="saleQuantity">已售1886台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">2399.00</span></span>
+                  <span class="saleQuantity">已售1886台</span>
+                </p>
+              </div>
+            </li>
+         <!--    <li class="product clearfix no-mr">
+                  <div class="small-banner process">活动预热中</div>
+              <div class="product-image">
+                <a onclick="window.open('/items/17', '_blank');_smq.push(['custom', '列表页', '产品展示图', '17']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【LED55EC880UCQ】55英寸/ULED超画质电视/曲面/4K/ VIDAA智能/32GB内存 ">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/17" target="_blank">55英寸/ULED超画质电视/曲面/4K/ VIDAA智能/32GB内存</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">5499.00</span></span>
+                  <span class="saleQuantity">已售1452台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">5499.00</span></span>
+                  <span class="saleQuantity">已售1452台</span>
+                </p>
+              </div>
+            </li>
+            <li class="product clearfix ">
+              <div class="product-image">
+                <a onclick="window.open('/items/15', '_blank');_smq.push(['custom', '列表页', '产品展示图', '15']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【LED50EC720US】50英寸/4K电视/金属超薄/HDR/16GB内存">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/15" target="_blank">50英寸/4K电视/金属超薄/HDR/16GB内存</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">2699.00</span></span>
+                  <span class="saleQuantity">已售2029台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">2699.00</span></span>
+                  <span class="saleQuantity">已售2029台</span>
+                </p>
+              </div>
+            </li>
+            <li class="product clearfix ">
+                  <div class="small-banner process">活动预热中</div>
+              <div class="product-image">
+                <a onclick="window.open('/items/2298', '_blank');_smq.push(['custom', '列表页', '产品展示图', '2298']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【H55E75A】55英寸/4K超清/3+64超大配置/自动体育模式/CD纹外置低音/VIDAA AI人工智能">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/2298" target="_blank">55英寸/4K超清/3+64超大配置/自动体育模式/CD纹外置低音/VIDAA AI人工智能</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">4799.00</span></span>
+                  <span class="saleQuantity">已售539台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">4799.00</span></span>
+                  <span class="saleQuantity">已售539台</span>
+                </p>
+              </div>
+            </li>
+            <li class="product clearfix ">
+                  <div class="small-banner process">活动预热中</div>
+              <div class="product-image">
+                <a onclick="window.open('/items/4', '_blank');_smq.push(['custom', '列表页', '产品展示图', '4']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【LED65EC880UCQ】65英寸/ULED超画质电视/曲面/4K/ VIDAA智能/32GB内存 ">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/4" target="_blank">65英寸/ULED超画质电视/曲面/4K/ VIDAA智能/32GB内存</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">8499.00</span></span>
+                  <span class="saleQuantity">已售920台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">8499.00</span></span>
+                  <span class="saleQuantity">已售920台</span>
+                </p>
+              </div>
+            </li> -->
+   <!--          <li class="product clearfix no-mr">
+              <div class="product-image">
+                <a onclick="window.open('/items/118', '_blank');_smq.push(['custom', '列表页', '产品展示图', '118']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【LED55EC500U】55英寸/4K电视/海量影视/8GB内存">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/118" target="_blank">55英寸/4K电视/海量影视/8GB内存</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">2399.00</span></span>
+                  <span class="saleQuantity">已售823台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">2399.00</span></span>
+                  <span class="saleQuantity">已售823台</span>
+                </p>
+              </div>
+            </li>
+            <li class="product clearfix ">
+              <div class="product-image">
+                <a onclick="window.open('/items/82', '_blank');_smq.push(['custom', '列表页', '产品展示图', '82']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【LED55E7CY】55英寸/曲面电视/4K/智慧语音/HDR/16GB内存">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/82" target="_blank">55英寸/曲面电视/4K/智慧语音/HDR/16GB内存</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">3199.00</span></span>
+                  <span class="saleQuantity">已售1074台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">3199.00</span></span>
+                  <span class="saleQuantity">已售1074台</span>
+                </p>
+              </div>
+            </li>
+            <li class="product clearfix ">
+                  <div class="small-banner process">活动预热中</div>
+              <div class="product-image">
+                <a onclick="window.open('/items/2299', '_blank');_smq.push(['custom', '列表页', '产品展示图', '2299']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【H65E75A】65英寸/4K超清/3+64超大配置/自动体育模式/CD纹外置低音/VIDAA AI人工智能">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/2299" target="_blank">65英寸/4K超清/3+64超大配置/自动体育模式/CD纹外置低音/VIDAA AI人工智能</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">6999.00</span></span>
+                  <span class="saleQuantity">已售456台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">6999.00</span></span>
+                  <span class="saleQuantity">已售456台</span>
+                </p>
+              </div>
+            </li>
+            <li class="product clearfix ">
+                  <div class="small-banner process">活动预热中</div>
+              <div class="product-image">
+                <a onclick="window.open('/items/2387', '_blank');_smq.push(['custom', '列表页', '产品展示图', '2387']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【H55E3A】55英寸4K/纤薄外观/人工智能/8GB内存/海量资源">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/2387" target="_blank">55英寸4K/纤薄外观/人工智能/8GB内存/海量资源</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">2599.00</span></span>
+                  <span class="saleQuantity">已售400台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">2599.00</span></span>
+                  <span class="saleQuantity">已售400台</span>
+                </p>
+              </div>
+            </li> -->
+           <!--  <li class="product clearfix no-mr">
+              <div class="product-image">
+                <a onclick="window.open('/items/16', '_blank');_smq.push(['custom', '列表页', '产品展示图', '16']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【LED75E7U】75英寸/4K电视/金属超薄/人工智能/HDR/8GB内存">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/16" target="_blank">75英寸/4K电视/金属超薄/人工智能/HDR/8GB内存</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">7999.00</span></span>
+                  <span class="saleQuantity">已售496台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">7999.00</span></span>
+                  <span class="saleQuantity">已售496台</span>
+                </p>
+              </div>
+            </li>
+            <li class="product clearfix ">
+              <div class="product-image">
+                <a onclick="window.open('/items/9', '_blank');_smq.push(['custom', '列表页', '产品展示图', '9']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【LED65EC680US】65英寸/4K电视/金属纤薄/智慧语音/HDR/16GB内存">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/9" target="_blank">65英寸/4K电视/金属纤薄/智慧语音/HDR/16GB内存</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">4999.00</span></span>
+                  <span class="saleQuantity">已售567台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">4999.00</span></span>
+                  <span class="saleQuantity">已售567台</span>
+                </p>
+              </div>
+            </li>
+            <li class="product clearfix ">
+                  <div class="small-banner process">活动预热中</div>
+              <div class="product-image">
+                <a onclick="window.open('/items/2332', '_blank');_smq.push(['custom', '列表页', '产品展示图', '2332']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【LED50EC750US】50英寸/4K电视/金属超薄/人工智能/32GB内存">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/2332" target="_blank">50英寸/4K电视/金属超薄/人工智能/32GB内存</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">3299.00</span></span>
+                  <span class="saleQuantity">已售437台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">3299.00</span></span>
+                  <span class="saleQuantity">已售437台</span>
+                </p>
+              </div>
+            </li>
+            <li class="product clearfix ">
+              <div class="product-image">
+                <a onclick="window.open('/items/10', '_blank');_smq.push(['custom', '列表页', '产品展示图', '10']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【LED65E7CY】65英寸/曲面电视/4K/智慧语音/HDR/16GB内存">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/10" target="_blank">65英寸/曲面电视/4K/智慧语音/HDR/16GB内存</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">4799.00</span></span>
+                  <span class="saleQuantity">已售388台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">4799.00</span></span>
+                  <span class="saleQuantity">已售388台</span>
+                </p>
+              </div>
+            </li> -->
+          <!--   <li class="product clearfix no-mr">
+                  <div class="small-banner process">活动预热中</div>
+              <div class="product-image">
+                <a onclick="window.open('/items/2385', '_blank');_smq.push(['custom', '列表页', '产品展示图', '2385']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【H50E3A】50英寸4K/纤薄外观/人工智能/8GB内存/海量资源">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/2385" target="_blank">50英寸4K/纤薄外观/人工智能/8GB内存/海量资源</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">2299.00</span></span>
+                  <span class="saleQuantity">已售308台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">2299.00</span></span>
+                  <span class="saleQuantity">已售308台</span>
+                </p>
+              </div>
+            </li>
+            <li class="product clearfix ">
+                  <div class="small-banner process">活动预热中</div>
+              <div class="product-image">
+                <a onclick="window.open('/items/5', '_blank');_smq.push(['custom', '列表页', '产品展示图', '5']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【LED65EC500U】65英寸/4K电视/海量影视/8GB内存">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/5" target="_blank">65英寸/4K电视/海量影视/8GB内存</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">3799.00</span></span>
+                  <span class="saleQuantity">已售277台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">3799.00</span></span>
+                  <span class="saleQuantity">已售277台</span>
+                </p>
+              </div>
+            </li>
+            <li class="product clearfix ">
+              <div class="product-image">
+                <a onclick="window.open('/items/19', '_blank');_smq.push(['custom', '列表页', '产品展示图', '19']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【LED60EC680US】60英寸/4K电视/金属纤薄/智慧语音/HDR/16GB内存">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/19" target="_blank">60英寸/4K电视/金属纤薄/智慧语音/HDR/16GB内存</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">4199.00</span></span>
+                  <span class="saleQuantity">已售376台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">4199.00</span></span>
+                  <span class="saleQuantity">已售376台</span>
+                </p>
+              </div>
+            </li>
+            <li class="product clearfix ">
+              <div class="product-image">
+                <a onclick="window.open('/items/2290', '_blank');_smq.push(['custom', '列表页', '产品展示图', '2290']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【H50E7A】50英寸/4K超清/无边全面屏/8.5mm超薄机身/自动体育模式/3+32超大配置/世界杯定制电视">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="/items/2290" target="_blank">50英寸/4K超清/无边全面屏/8.5mm超薄机身/自动体育模式/3+32超大配置/世界杯定制电视</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">3999.00</span></span>
+                  <span class="saleQuantity">已售157台</span>
+                </p>
+    
+                <div class="promotion clearfix">
+                      <i class="common no-fill" title="本商品参与折扣优惠">立减</i>
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">3999.00</span></span>
+                  <span class="saleQuantity">已售157台</span>
+                </p>
+              </div>
+            </li> -->
+            <li class="product clearfix no-mr" style="float: left;">
+              <div class="product-image">
+                <a onclick="window.open('/items/119', '_blank');_smq.push(['custom', '列表页', '产品展示图', '119']);">
+                  <img src="img/93fc43a3-4392-461a-aef1-37fdb5d43508.png" alt="【LED60EC500U】60英寸/4K电视/海量影视/8GB内存">
+                </a>
+              </div>
+              <div class="product-right">
+                <p class="product-title">
+                  <a href="detail.html" target="_blank">60英寸/4K电视/海量影视/8GB内存</a>
+                </p>
+                <p class="product-item-desc">
+                </p>
+    
+                <p class="product-price price1">
+                  <span class="currency">￥<span class="price">3499.00</span></span>
+                  <span class="saleQuantity">已售475台</span>
+                </p>
+    
+                <div class="promotion clearfix" style="float: left;">
+                  </div>
+                  <p class="product-price price2">
+                  <span class="currency">￥<span class="price">3499.00</span></span>
+                  <span class="saleQuantity">已售475台</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+    </div>
+    <!-- 分页 -->
+    <div class="list-pagination"></div>
+
+  </div>
+<!-- right 结束 -->
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<!-- 
+
+<div class="eve-row">
+<div class="eve-col-cu" style="width:147px;margin-left:-20px;height:54px;">
+<div class="eve-component">
+<div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>   <div class=" text-content">
+       <p><span style="font-size: 20px;">
+       4006-111-111
+   </span></p>
+   </div>
+</div>
+</div>
+  <div class="eve-component" style="margin-top:10px;">
+    <div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>   
+        <div class=" text-content">
+           <p><span style="font-size: 20px;">
+           4008-011-111
+           </span></p>
+       </div>
+    </div>
+  </div>
+</div>
+  <div class="eve-col-cu" style="width:70px;height:77px;margin-top:-11px;">
+    <div class="eve-component">
+      <div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
+        <div style="overflow:hidden;">
+          <img  class=" " alt="" title="海信官方商城-权威官网 汇聚精品"
+          style="width: 100%" src="img/a012c3a8-bea0-4a95-9b63-528d88a161c3.png">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="eve-col-cu" style="width:396px;height:223px;">
+<div class="eve-row">
+<div class="eve-col-cu" style="width:10px;margin-top:70px;height:100px;border-left:1px solid #cccccc;"></div>
+<div class="eve-col-cu eve-col-align-center" style="width:396px;margin-top:60px;height:200px;">
+  <div class="eve-row">
+    <div class="eve-col-cu" style="width:100px;height:100px;">
+      <div class="eve-component">
+        <div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
+          <div style="overflow:hidden;">
+            <img  class=" " alt="" title="海信官方商城-权威官网 汇聚精品"
+            style="width: 100%" src="img/eda42c30-9c42-4840-816f-e1af2304d4b7.jpg">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="eve-row">
+    <div class="eve-col-cu" style="width:396px;height:36px;">
+      <div class="eve-component">
+        <div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>   
+            <div class=" text-content" style="text-align:center;">
+               
+               <p>扫码体验</p><p>海信商城APP</p>
+           
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="eve-col-cu" style="width:396px;height:223px;">
+<div class="eve-row">
+  <div class="eve-col-cu" style="width:10px;margin-top:70px;height:100px;border-left:1px solid #cccccc;">
+  </div>
+  <div class="eve-col-cu eve-col-align-center" style="width:396px;margin-top:60px;height:200px;">
+    <div class="eve-row">
+      <div class="eve-col-cu" style="width:100px;height:100px;">
+        <div class="eve-component">
+          <div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
+            <div style="overflow:hidden;">
+              <img  class=" " alt="" title="海信官方商城-权威官网 汇聚精品"
+              style="width: 100%" src="img/3f7c4bd9-2fe0-4a36-a12a-f22555e341c4.jpg">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="eve-row">
+      <div class="eve-col-cu" style="width:396px;height:36px;">
+        <div class="eve-component">
+          <div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>   
+            <div class=" text-content" style="text-align:center;">
+                   
+                   <p>扫一扫</p><p>关注海信服务</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+ -->
+<div class="eve-row">
+<div class="eve-col-cu eve-col-align-center" style="width:100%;height:306px;background-color:#e9e9e9;">
+<div class="eve-row">
+  <div class="eve-col-cu" style="width:200px;margin-top:20px;height:127px;">
+    <div class="eve-component">
+      <div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>   
+          <div class=" text-content" style="text-align:center;line-height:24px;">
+             
+             <p><span style="font-size: 16px; color: rgb(52, 53, 54);">企业简介</span></p>
+             <p><span style="font-size: 16px; color: rgb(52, 53, 54);"><br></span></p>
+             <p><a href="" target="_blank" rel="">企业简介</a></p>
+             <p><a href="" target="_blank" rel="">企业历史</a></p>
+             <p><a href="" target="_blank" rel="">企业荣誉</a></p>
+             <p><a href="" target="_blank" rel="">全球布局</a></p>
+         
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="eve-col-cu" style="width:200px;height:128px;margin-top:20px;">
+    <div class="eve-component">
+      <div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>    
+      <div class=" text-content" style="text-align:center;line-height:24px;">
+             
+             
+             <p><span style="font-size: 16px; color: rgb(52, 53, 54);">购物指南</span></p><p><span style="font-size: 16px; color: rgb(52, 53, 54);"><br></span></p>
+             <p><a href="" target="_blank" rel="">购物流程</a></p>
+             <p><a href="" target="_blank" rel="">常见问题</a></p>
+             <p><a href="" target="_blank" rel="">在线支付</a></p>
+             <p><a href="" target="_blank" rel="">找人代付</a></p>
+         
+         
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="eve-col-cu" style="width:200px;height:110px;margin-top:20px;">
+    <div class="eve-component">
+      <div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>    <div class=" text-content" style="text-align:center;line-height:24px;">
+             
+             
+             
+             <p><span style="font-size: 16px; color: rgb(52, 53, 54);">物流配送</span></p>
+             <p><span style="font-size: 16px; color: rgb(52, 53, 54);"><br></span></p>
+             <p><a href="" target="_blank" rel="">送货范围</a></p>
+             <p><a href="" target="_blank" rel="">在线支付</a></p>
+         
+         
+         
+           </div>
+      </div>
+    </div>
+  </div>
+  <div class="eve-col-cu" style="width:200px;margin-top:20px;height:128px;">
+    <div class="eve-component">
+      <div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>   <div class=" text-content" style="text-align:center;line-height:24px;">
+         
+             
+             <p><span style="font-size: 16px; color: rgb(52, 53, 54);">商城服务</span></p>
+             <p><span style="font-size: 16px; color: rgb(52, 53, 54);"><br></span></p>
+             <p><a href="" target="_blank" rel="">售后政策</a></p>
+             <p><a href="" target="_blank" rel="">价格保护</a></p>
+             <p><a href="" target="_blank" rel="">退款说明</a></p>
+             <p><a href="" target="_blank" rel="">退换货说明</a></p>
+             <p><a href="https://www.hisense.com/helps" target="_blank" rel="">手机服务商</a></p>
+             <p class=""><a href="" target="_blank" rel="">手机预装应用公示</a><br></p>
+         
+        
+         
+         </div>
+      </div>
+    </div>
+  </div>
+  <div class="eve-col-cu" style="width:200px;height:110px;margin-top:20px;">
+    <div class="eve-component">
+      <div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>   <div class=" text-content" style="text-align:center;line-height:24px;">
+             
+             
+             <p><span style="font-size: 16px; color: rgb(52, 53, 54);">人才招聘</span></p>
+             <p><span style="font-size: 16px; color: rgb(52, 53, 54);"><br></span></p>
+             <p><a href="" target="_blank" rel="">社会招聘</a></p>
+             <p><a href="" target="_blank" rel="">校园招聘</a></p>
+             <p><a href="" target="_blank" rel="">培训发展</a></p>
+             <p><a href="" target="_blank" rel="">快乐工作</a></p>
+         
+         
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="eve-row">
+<div class="eve-col-cu eve-col-align-center" style="width:100%;height:270px;background-color:#3f3f3f;">
+<div class="eve-row">
+<div class="eve-col-cu eve-col-align-center" style="width:800px;margin-top:45px;height:45px;">
+  <div class="eve-row">
+    <div class="eve-col-cu" style="width:200px;height:45px;">
+      <div class="eve-row">
+        <div class="eve-col-cu" style="width:45px;height:45px;">
+          <div class="eve-component">
+            <div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
+              <div style="overflow:hidden;">
+                <img  class=" " alt="" title="海信官方商城-权威官网 汇聚精品"
+                style="width: 100%" src="img/10936982-486c-4fbe-8040-5539f434532c.png">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="eve-col-cu" style="width:143px;margin-top:16px;margin-left:12px;height:18px;">
+          <div class="eve-component">
+            <div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>   
+                <div class=" text-content">
+                   <p><span style="font-size: 14px; color: rgb(255, 255, 255);">全国联保</span></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="eve-col-cu" style="width:200px;height:45px;">
+      <div class="eve-row">
+        <div class="eve-col-cu" style="width:45px;height:45px;">
+          <div class="eve-component">
+            <div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
+              <div style="overflow:hidden;">
+                <img  class=" " alt="" title="海信官方商城-权威官网 汇聚精品"
+                style="width: 100%"    src="img/fea707fd-a2a6-4fc2-bb76-770774ddb729.png">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="eve-col-cu" style="width:143px;margin-top:16px;margin-left:12px;height:18px;">
+          <div class="eve-component">
+            <div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>   
+                <div class=" text-content">
+                   
+                   <p><span style="font-size: 14px; color: rgb(255, 255, 255);">全场包邮</span></p>
+               
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="eve-col-cu" style="width:200px;">
+      <div class="eve-row">
+        <div class="eve-col-cu" style="width:200px;height:45px;">
+          <div class="eve-row">
+            <div class="eve-col-cu" style="width:45px;height:45px;">
+              <div class="eve-component">
+                <div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
+                  <div style="overflow:hidden;">
+                    <img  class=" " alt="" title="海信官方商城-权威官网 汇聚精品"
+                   style="width: 100%" src="img/0ad5933b-ca89-401b-a071-2e3768fdb18d.jpg">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="eve-col-cu" style="width:143px;margin-top:16px;margin-left:12px;height:18px;">
+              <div class="eve-component">
+                <div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>   
+                      <div class=" text-content">
+                         
+                         
+                         <p><span style="font-size: 14px; color: rgb(255, 255, 255);">7天价保</span></p>
+                     
+                     </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="eve-col-cu" style="width:200px;height:45px;">
+      <div class="eve-row">
+        <div class="eve-col-cu" style="width:45px;height:45px;">
+          <div class="eve-component">
+            <div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
+                <div style="overflow:hidden;">
+                  <img  class=" " alt="" title="海信官方商城-权威官网 汇聚精品"
+                  style="width: 100%" src="img/b5319d23-673a-42d7-b20e-2c79a6e218e0.png">
+
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="eve-col-cu" style="width:143px;margin-top:16px;margin-left:12px;height:18px;">
+          <div class="eve-component">
+            <div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>   
+                <div class=" text-content">
+                     
+                     
+                     <p><span style="font-size: 14px; color: rgb(255, 255, 255);">7天无理由退换</span></p>
+                 
+                 
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="eve-row">
+    <div class="eve-col-cu" style="width:1076px;margin-top:32px;">
+      <div class="eve-component">
+        <div class='eve-text js-comp eve-component' data-comp-name='文字' data-comp-path='eevee/text'>   
+            <div class=" text-content" style="text-align:center;">
+                   <p>
+                     <span style="color: rgb(153, 153, 153);">
+                     Copyright 2015 Hisense Group All Rights Reserved. 海信集团有限公司版权所有 鲁ICP备05027830
+                     </span>
+                   </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="eve-row">
+  <div class="eve-col-cu eve-col-align-center" style="width:1076px;height:70px;margin-top:45px;">
+    <div class="eve-row">
+      <div class="eve-col-cu eve-col-align-center" style="width:570px;height:40px;">
+        <div class="eve-row">
+          <div class="eve-col-cu" style="width:112px;height:40px;">
+            <div class="eve-component">
+              <div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
+                <div style="overflow:hidden;">
+                    <a class="js-link-page"
+                      data-href=""
+                      data-blank=""
+                      data-is-login-modal=""
+                      title="海信官方商城-权威官网 汇聚精品">
+                    <img  class=" " alt="" title="海信官方商城-权威官网 汇聚精品"
+                    style="width: 100%" src="img/13dfd89d-9512-43df-9fb5-9f8bc7993ad8.png">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="eve-col-cu" style="width:112px;height:40px;">
+            <div class="eve-component">
+              <div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
+                <div style="overflow:hidden;">
+                  <a class="js-link-page"
+                    data-href=""
+                    data-blank=""
+                    data-is-login-modal=""
+                    title="海信官方商城-权威官网 汇聚精品">
+                  <img  class=" " alt="" title="海信官方商城-权威官网 汇聚精品"
+                  style="width: 100%" src="img/13dfd89d-9512-43df-9fb5-9f8bc7993ad8.png">
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="eve-col-cu" style="width:112px;height:40px;">
+            <div class="eve-component">
+              <div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
+                <div style="overflow:hidden;">
+                  <a class="js-link-page"
+                    data-href=""
+                    data-blank=""
+                    data-is-login-modal=""
+                    title="海信官方商城-权威官网 汇聚精品">
+                  <img  class=" " alt="" title="海信官方商城-权威官网 汇聚精品"
+                  style="width: 100%" src="img/517c0b74-a06a-404d-8b37-1564882fe9b4.jpg">
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="eve-col-cu" style="width:112px;height:40px;">
+            <div class="eve-component">
+              <div class='eve-image js-comp eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
+                <div style="overflow:hidden;">
+                    <a class="js-link-page"
+                      data-href="om/query/credit.html"
+                      data-blank=""
+                      data-is-login-modal=""
+                      title="海信官方商城-权威官网 汇聚精品">
+                    <img  class=" " alt="" title="海信官方商城-权威官网 汇聚精品"
+                    style="width: 100%" src="img/13dfd89d-9512-43df-9fb5-9f8bc7993ad8.png">
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="eve-component">
+    <div class='component-float-window js-comp eve-component' data-comp-name='悬浮窗组件' data-comp-path='design/float_window'>  
+        <div>
+          <div class="float-window-container hide" style="width: px" data-scroll="">
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+ <!--    <script src="//assets.shop.hisense.com/assets/scripts/bluebird-5f381f.js"></script>
+    <script src="//assets.shop.hisense.com/assets/scripts/vendor-ec5606.js"></script>
+    <script src="//assets.shop.hisense.com/assets/scripts/sharejs/js/jquery.share.min-4dbf28.js"></script>
+    <script src="//assets.shop.hisense.com/assets/scripts/templates-front-41d65f.js"></script>
+    <script src="//assets.shop.hisense.com/assets/scripts/app-front-7bcadb.js"></script>
+    <script language="javascript" type="text/javascript">
+      var NTKF_PARAM = {
+        siteid: "kf_9694",                 //企业ID，为固定值，必填
+        settingid: "kf_9694_1448276429098",  //接待组ID，为固定值，必填
+        uid: "",                     //用户ID，未登录可以为空，但不能给null，uid赋予的值在显示到小能客户端上
+        uname: "",         //用户名，未登录可以为空，但不能给null，uname赋予的值显示到小能客户端上
+        isvip: "",                           //是否为vip用户，0代表非会员，1代表会员，取值显示到小能客户端上
+        userlevel: "",                     //网站自定义会员级别，0-N，可根据选择判断，取值显示到小能客户端上
+        erpparam: ""                       //erpparam为erp功能的扩展字段，可选，购买erp功能后用于erp功能集成
+      }
+    </script>
+    <script src="//dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9694" charset="utf-8" defer async></script>
+    <script>
+      window.i18nEnv = {"lng":"zh-CN","ns":["all_mix"],"defaultNS":"all_mix"};
+      i18nIniter({
+        cache: { enable: false },
+        resourceFormat: 'json',
+        callback: function() {
+          require("app")()
+        }
+      });
+    </script>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c92ff3a47b1855874d71f3beb5345364";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> -->
+  </body>
+</html>

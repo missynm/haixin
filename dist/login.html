@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<!-- <link rel="stylesheet" href="login.css"> -->
+			<script>
+
+			window.onload = function(){
+				var t1 = new TabSwitch("div1");
+			}
+
+			function TabSwitch(id){
+				var oDiv = document.getElementById(id);
+				this.aBtns = oDiv.getElementsByTagName("button");
+				this.aDivs = oDiv.getElementsByTagName("div");
+
+				for(var i = 0; i < this.aBtns.length; i++){
+					this.aBtns[i].index = i;
+					
+					var _this = this;
+
+					this.aBtns[i].onclick = function(){
+						_this.tab(this);
+					};
+				}
+			}
+
+			TabSwitch.prototype.tab = function(_this){
+				
+				for(var j = 0; j < this.aBtns.length; j++){
+					this.aBtns[j].className = "";
+					this.aDivs[j].style.display = "none";
+				}
+
+				_this.className = "active";
+				this.aDivs[_this.index].style.display = 'block';
+			}
+
+		</script>
+	<link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/a0.css">
+    <link rel="stylesheet" href="css/a1.css">
+    <link rel="stylesheet" href="css/a2.css">
+    <link rel="stylesheet" href="css/a3.css">
+    <link rel="stylesheet" href="css/a4.css">
+    <link rel="stylesheet" href="css/a5.css">
+    <script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+     <script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class='js-comp component-right-bottom-nav eve-component' data-comp-path='common/right_bottom_nav'><ul class="crbm-ul" data-user="null"
+    class="hide">
+  <li title="购物车">
+    <a href="/buyer/cart" onclick="_smq.push(['custom', '全站', '右侧悬浮栏', '购物车']);">
+      <i class="iconfont icon-ic-cart"></i>
+      <div class="bottom-tip">购物车</div>
+    </a>
+  </li>
+  <li class="js-open-kefu" title="客服">
+    <a href="javascript:;" onclick="_smq.push(['custom', '全站', '右侧悬浮栏', '在线客服']);">
+      <i class="iconfont icon-GroupCopyx-"></i>
+      <div class="bottom-tip">在线客服</div>
+    </a>
+  </li>
+    <li class="js-qrcode-li" title="二维码">
+      <a href="javascript:;">
+        <i class="iconfont icon-ic-logo-mobile"></i>
+        <div class="bottom-tip">手机app</div>
+      </a>
+    </li>
+  <li class="js-jump-footprint" title="足迹">
+    <a href="javascript:;" onclick="_smq.push(['custom', '全站', '右侧悬浮栏', '浏览记录']);">
+      <i class="iconfont icon-ic-footprint"></i>
+      <div class="bottom-tip">足迹</div>
+    </a>
+  </li>
+  <li class="js-return-top return-top" title="返回顶部">
+    <a href="javascript:;">
+      <i class="iconfont icon-huidaodingbujiantou"></i>
+      <div class="bottom-tip">返回顶部</div>
+    </a>
+  </li>
+</ul>
+<div class="item-qrcode-container js-item-qrcode-container hide">
+  <div class="item-qrcode-title">
+    <div>扫一扫</div>
+    <div>使用手机购买</div>
+  </div>
+  <div class="item-qrcode-wrapper">
+    <div class="js-qrcode-content">
+    </div>
+  </div>
+</div>
+</div>    <div class='auth-container js-comp eve-component' data-comp-path='common/auth_container'>  <div id="auth-div" data-auth="null"></div>
+</div>
+
+
+
+	<div class="top">
+		<div class="top11">
+				<a href="index.html"><img src="img/ed2889d6-3a2a-42c5-8a32-ab1d21cd00ce.png" alt="背景图"></a>
+		       <span>&nbsp;&nbsp;&nbsp;权威官网 汇聚精品</span>
+		</div>
+	</div>
+	<div class="content">
+		<div class="login">
+			<div id = 'div1'>
+			<button class = 'active'><span>账户登录</span></button>
+			<button><span>快捷登陆</span></button>
+			<div style = "display: block">
+						   
+						                          <!-- <label for="phone">手机号码</label> -->
+						                    <input type="text" name="phone" id="phone" placeholder="手机号码">
+						                    <div class="tips"></div>
+						                   <br>
+					                         <!--    <label for="password">Password</label> -->
+						                    <input type="password" name="password" id="password" placeholder="密码">
+						                      <div class="tips"></div>
+						                  
+						                   <br>
+						                	<label for="checkbox">
+						                	<input type="checkbox" id="checkbox"	style="margin-top: 1px;" > <i>30天免登陆</i>
+						                	</label>
+						                
+						                	<span><a href="#" style="font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;忘记密码</a></span>
+						            	    <span><a href="register.html" style="font-size: 12px;">&nbsp;&nbsp;免费注册</a></span>
+						             <input type="submit" id="login" value="立即登录">
+						
+			</div>
+			<div>
+			            <!-- <label for="phone">手机号码</label> -->
+						                 <input type="text" name="phone" id="phone" placeholder="手机号码">
+						        <div class="tips">
+						                  <br>
+					                         <!--    <label for="password">Password</label> -->
+						                    <input type="password" name="password" id="password" placeholder="密码">
+						              <div class="tips">
+						                  
+						                   <br>
+						                	<label for="checkbox">
+						                	<input type="checkbox" id="checkbox"> <i>30天免登陆</i>
+						                	</label>
+						                
+						                	<span><a href="#">忘记密码</a></span>
+						            	    <span><a href="#">免费注册</a></span>
+						             <input type="submit" id="login" value="立即登录">
+									</div>
+								</div>
+		    </div>
+
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<br>
+		<p>Copyright 2015 Hisense Group All Rights Reserved.</p>
+	
+        <p>海信集团有限公司版权所有 京ICP备0508775</p>
+</div>
+<script>
+		window.onload = function(){
+			var oLogin = document.getElementById("login");
+			// var oEnroll = document.getElementById("enroll");
+			// var oA = document.getElementsByTagName("a");
+	
+			// 登录
+			oLogin.onclick = function(){
+				ajax({
+					method:"post",
+					url:"test.php?type=login",
+					data:`username=${$("[name=username]")[0].value}&pwd=${$("[name=pwd]")[0].value}`,
+					success:function(data){
+						alert(data);
+					},
+					error:function(msg){
+						alert(msg);
+					}
+				})
+			}
+		
+		}
+	</script>
+</body>
+</html>
